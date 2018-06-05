@@ -13,6 +13,8 @@ class GenresController < ApplicationController
     genre = Genre.find(params[:id])
     @movies = genre.movies
     @average = @movies.average(:rating)
+    @highest_rating = @movies.maximum(:rating)
+    @highest_rated_movie = @movies.where(rating: @highest_rating).first.title
   end
 
   private
