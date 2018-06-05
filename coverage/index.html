@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T09:32:44-06:00">2018-06-05T09:32:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T09:39:41-06:00">2018-06-05T09:39:41-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">98.86%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.68
+         1.66
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>51</b> files in total.
-    <b>419</b> relevant lines. 
-    <span class="green"><b>419</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>437</b> relevant lines. 
+    <span class="green"><b>432</b> lines covered</span> and
+    <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -87,7 +87,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>10.6</td>
+        <td>10.8</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -207,7 +207,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>9.2</td>
+        <td>9.5</td>
       </tr>
       
       <tr>
@@ -392,12 +392,12 @@
       
       <tr>
         <td class="strong"><a href="#b9845f92908b17b68dc94d15d83dba02a5efa854" class="src_link" title="spec/features/admin_sees_genre_index_spec.rb">spec/features/admin_sees_genre_index_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>21</td>
-        <td>10</td>
-        <td>10</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="yellow strong">82.14 %</td>
+        <td>56</td>
+        <td>28</td>
+        <td>23</td>
+        <td>5</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -905,8 +905,8 @@
           <code class="ruby">  def set_cart</code>
         </li>
       
-        <li class="covered" data-hits="46" data-linenumber="8">
-          <span class="hits">46</span>
+        <li class="covered" data-hits="48" data-linenumber="8">
+          <span class="hits">48</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -1256,8 +1256,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
           
           <code class="ruby">    @genres = Genre.all</code>
         </li>
@@ -2003,8 +2003,8 @@
           <code class="ruby">  def initialize(initial_contents)</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="5">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="51" data-linenumber="5">
+          <span class="hits">51</span>
           
           <code class="ruby">    @contents = initial_contents || Hash.new(0)</code>
         </li>
@@ -2027,8 +2027,8 @@
           <code class="ruby">  def total_item_count</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="9">
-          <span class="hits">36</span>
+        <li class="covered" data-hits="38" data-linenumber="9">
+          <span class="hits">38</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -3739,11 +3739,11 @@
         <div class="source_table" id="b9845f92908b17b68dc94d15d83dba02a5efa854">
   <div class="header">
     <h3>spec/features/admin_sees_genre_index_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">82.14 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>28</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -3871,6 +3871,216 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # As an admin user,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  # When I visit the genre index page,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # I see a form to create a new genre.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;shows a form to create new genre&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    admin = User.create(username: &quot;Dee&quot;, password: &quot;password&quot;, role: 1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit genres_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_button(&quot;Create Genre&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  # As an admin user,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  # When I visit the genre index page,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  # And I fill out the form with a genre&#39;s name and click &#39;Create Genre&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  # I return to the genre index page,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # I see all genre names from the database including the new genre I have just created.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;can create a new genre&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    genre1 = Genre.create(name: &#39;Action&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    genre2 = Genre.create(name: &#39;Comedy&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    admin = User.create(username: &quot;Dee&quot;, password: &quot;password&quot;, role: 1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit genres_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    name = &#39;Sci-Fi&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;genre[name]&#39;, with: name</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">    click_on &#39;Create Genre&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">    expect(current_path).to eq(genres_path)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">    expect(page).to have_content(name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">    expect(page).to have_content(genre1.name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">    expect(page).to have_content(genre2.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">end</code>
