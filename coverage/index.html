@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T09:18:59-06:00">2018-06-05T09:18:59-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-05T09:28:43-06:00">2018-06-05T09:28:43-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.5%</span></span>
+    (<span class="covered_percent"><span class="green">99.52%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.69
+         1.68
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>47</b> files in total.
-    <b>400</b> relevant lines. 
-    <span class="green"><b>394</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed </span>
+    <b>50</b> files in total.
+    <b>415</b> relevant lines. 
+    <span class="green"><b>413</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -211,13 +211,33 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#e1515e87afe2a236ac0e3db2ea591e70ad9fdd79" class="src_link" title="app/models/genre.rb">app/models/genre.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4398459e73faf0409941940dd496c044fa0fa640" class="src_link" title="app/models/genre_movie.rb">app/models/genre_movie.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#30ce6f082151bcd3ee0e157f04500acd9b2774de" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>7</td>
-        <td>7</td>
+        <td>13</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
-        <td>2.7</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -362,12 +382,12 @@
       
       <tr>
         <td class="strong"><a href="#b9845f92908b17b68dc94d15d83dba02a5efa854" class="src_link" title="spec/features/admin_sees_genre_index_spec.rb">spec/features/admin_sees_genre_index_spec.rb</a></td>
-        <td class="red strong">40.0 %</td>
+        <td class="red strong">80.0 %</td>
         <td>21</td>
         <td>10</td>
-        <td>4</td>
-        <td>6</td>
-        <td>0.4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -492,6 +512,16 @@
       
       <tr>
         <td class="strong"><a href="#ba984e5c3fb3428dac8c0e487bcdf40e3c858490" class="src_link" title="spec/models/director_spec.rb">spec/models/director_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e17a2ea186730d30b7ecae374883f8457688fd3a" class="src_link" title="spec/models/genre_spec.rb">spec/models/genre_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
         <td>6</td>
@@ -2076,13 +2106,111 @@
 </div>
 
       
+        <div class="source_table" id="e1515e87afe2a236ac0e3db2ea591e70ad9fdd79">
+  <div class="header">
+    <h3>app/models/genre.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Genre &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates_presence_of :name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :genre_movies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :movies, through: :genre_movies</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4398459e73faf0409941940dd496c044fa0fa640">
+  <div class="header">
+    <h3>app/models/genre_movie.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class GenreMovie &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :movie</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :genre</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="30ce6f082151bcd3ee0e157f04500acd9b2774de">
   <div class="header">
     <h3>app/models/movie.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2114,16 +2242,16 @@
           <code class="ruby">  has_many :actors, through: :actor_movies</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  has_many :genre_movies</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_save :generate_slug</code>
+          <code class="ruby">  has_many :genres, through: :genre_movies</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -2135,22 +2263,34 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
+          <code class="ruby">  before_save :generate_slug</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
           <code class="ruby">  def generate_slug</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="9">
+        <li class="covered" data-hits="13" data-linenumber="11">
           <span class="hits">13</span>
           
           <code class="ruby">    self.slug = title.parameterize</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -3528,11 +3668,11 @@
         <div class="source_table" id="b9845f92908b17b68dc94d15d83dba02a5efa854">
   <div class="header">
     <h3>spec/features/admin_sees_genre_index_spec.rb</h3>
-    <h4><span class="red">40.0 %</span> covered</h4>
+    <h4><span class="red">80.0 %</span> covered</h4>
     <div>
       <b>10</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -3599,14 +3739,14 @@
           <code class="ruby">    genre1 = Genre.create(name: &#39;Action&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    genre2 = Genre.create(name: &#39;Comedy&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">    admin = User.create(username: &quot;Dee&quot;, password: &quot;password&quot;, role: 1)</code>
         </li>
@@ -3617,8 +3757,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
           <code class="ruby">    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)</code>
         </li>
@@ -3629,8 +3769,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">    visit genres_path</code>
         </li>
@@ -5794,6 +5934,85 @@
           <span class="hits">2</span>
           
           <code class="ruby">    it {should have_many(:movies)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e17a2ea186730d30b7ecae374883f8457688fd3a">
+  <div class="header">
+    <h3>spec/models/genre_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Genre, type: :model do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;validations&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should validate_presence_of(:name)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;relationships&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should have_many(:movies).through(:genre_movies)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
