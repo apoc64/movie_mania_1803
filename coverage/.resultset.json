@@ -516,6 +516,19 @@
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/spec/features/user_sees_all_movies_spec.rb": [
@@ -1033,6 +1046,6 @@
         null
       ]
     },
-    "timestamp": 1528215299
+    "timestamp": 1528215444
   }
 }

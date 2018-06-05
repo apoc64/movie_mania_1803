@@ -32,4 +32,17 @@ describe "user sees one movie" do
     expect(page).to have_content(genre1.name)
     expect(page).to have_content(genre2.name)
   end
+#   As a Visitor,
+#   When I visit a movie show page,
+#     I see the number rating for this movie
+#
+# (the rating should be an integer attribute (from 1 to 5) for the movie)
+  it 'shows movie rating' do
+    director = Director.create(name: 'George Lucas')
+    movie = director.movies.create(title:'Star Wars Episode 4', description: 'A New Hope', rating: 4)
+
+    visit movie_path(movie.slug)
+
+    expect(page).to have_content("Rating: #{movie.rating}")
+  end
 end
