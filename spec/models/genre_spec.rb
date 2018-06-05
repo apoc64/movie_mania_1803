@@ -42,5 +42,16 @@ describe Genre, type: :model do
 
       expect(genre.movie_with_rating(3)).to eq(movie1.title)
     end
+
+    it 'has lowest rating' do
+      director = Director.create(name: 'George Lucas')
+      genre = Genre.create(name: 'Sci-Fi')
+      movie1 = director.movies.create(title:'Star Wars Episode 4', description: 'A New Hope', rating: 3)
+      movie2 = director.movies.create(title:'Star Wars Episode 5', description: 'The Empire Strike Back', rating: 5)
+      genre.movies << movie1
+      genre.movies << movie2
+
+      expect(genre.lowest_rating).to eq(movie1.rating)
+    end
   end
 end

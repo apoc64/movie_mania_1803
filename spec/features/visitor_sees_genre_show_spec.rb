@@ -54,4 +54,19 @@ describe 'visitor_sees_genre_show' do
 
     expect(page).to have_content("Highest Rated: #{movie2.title}, #{movie2.rating}")
   end
+  # As a Visitor,
+  # When I visit a genre show page,
+  #   I see the name and rating of the movie with the lowest rating of all movies in this genre
+  it 'shows the lowest rated movie and rating' do
+    director = Director.create(name: 'George Lucas')
+    genre = Genre.create(name: 'Sci-Fi')
+    movie1 = director.movies.create(title:'Star Wars Episode 4', description: 'A New Hope', rating: 3)
+    movie2 = director.movies.create(title:'Star Wars Episode 5', description: 'The Empire Strike Back', rating: 5)
+    genre.movies << movie1
+    genre.movies << movie2
+
+    visit genre_path(genre)
+
+    expect(page).to have_content("Lowest Rated: #{movie1.title}, #{movie1.rating}")
+  end
 end

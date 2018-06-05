@@ -12,6 +12,10 @@ class Genre < ApplicationRecord
     movies.maximum(:rating)
   end
 
+  def lowest_rating
+    movies.minimum(:rating)
+  end
+
   def movie_with_rating(rating)
     movies.where(rating: rating).first.title
   end
