@@ -3,4 +3,16 @@ class Genre < ApplicationRecord
 
   has_many :genre_movies
   has_many :movies, through: :genre_movies
+
+  def average_rating
+    movies.average(:rating)
+  end
+
+  def highest_rating
+    movies.maximum(:rating)
+  end
+
+  def movie_with_rating(rating)
+    movies.where(rating: rating).first.title
+  end
 end
