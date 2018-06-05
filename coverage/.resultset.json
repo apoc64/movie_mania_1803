@@ -496,6 +496,26 @@
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/spec/features/user_sees_all_movies_spec.rb": [
@@ -666,11 +686,11 @@
         1,
         null,
         1,
-        55,
+        56,
         null,
         null,
         1,
-        41,
+        42,
         null,
         null,
         1,
@@ -754,7 +774,7 @@
         1,
         null,
         1,
-        15,
+        16,
         null,
         null
       ],
@@ -803,12 +823,12 @@
         1,
         null,
         1,
-        52,
+        53,
         null,
         null,
         1,
-        35,
-        35,
+        36,
+        36,
         4,
         null,
         null,
@@ -878,7 +898,8 @@
         null,
         null,
         1,
-        2,
+        3,
+        3,
         null,
         null,
         1,
@@ -923,6 +944,12 @@
         1,
         null,
         null,
+        null
+      ],
+      "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/app/models/genre_movie.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/app/controllers/actors_controller.rb": [
@@ -1004,14 +1031,8 @@
         2,
         null,
         null
-      ],
-      "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/app/models/genre_movie.rb": [
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1528214934
+    "timestamp": 1528215299
   }
 }
