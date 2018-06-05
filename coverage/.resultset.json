@@ -206,6 +206,29 @@
         1,
         null
       ],
+      "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/spec/features/admin_sees_genre_index_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/stevenschwedt/turing/2mod/timed/movie_mania_1803/spec/features/user_can_add_movies_to_cart_spec.rb": [
         1,
         null,
@@ -852,6 +875,6 @@
         null
       ]
     },
-    "timestamp": 1528211177
+    "timestamp": 1528211939
   }
 }
