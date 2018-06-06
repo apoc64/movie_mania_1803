@@ -3,7 +3,7 @@
 <% end %>
 
 <% if current_admin? %>
-<%=form_for @genre do |f| %>
+<%=form_for @genre, url: admin_genres_path do |f| %>
   <%=f.label :name %>
   <%=f.text_field :name %>
   <%=f.submit 'Create Genre' %>
